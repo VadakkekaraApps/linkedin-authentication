@@ -1,5 +1,5 @@
 
-package com.jose2007kj.reactnative;
+package com.jose2007kj.linkedin;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
