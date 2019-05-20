@@ -147,7 +147,7 @@ public class RNLinkedinAuthenticationModule extends ReactContextBaseJavaModule i
      */
     @ReactMethod
     public void login(final ReadableArray scopes) {
-
+        Log.d(TAG, "signIn");
         final Activity _activity = this.getCurrentActivity();
 
         _activity.runOnUiThread(new Runnable() {
@@ -164,7 +164,7 @@ public class RNLinkedinAuthenticationModule extends ReactContextBaseJavaModule i
                         Log.d(TAG, "onAuthSuccess");
 
 
-                        String accessToken = LISessionManager.getInstance(_context).getSession().getAccessToken().getValue();
+                        String accessToken = LISessionManager.getInstance(getReactApplicationContext()).getSession().getAccessToken().getValue();
                         Log.d(TAG, "onAuthSuccess: " + accessToken);
 
                         WritableMap params = Arguments.createMap();

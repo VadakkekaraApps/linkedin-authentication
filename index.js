@@ -1,10 +1,5 @@
-import { NativeModules } from 'react-native';
+'use strict';
 
-const { RNLinkedinAuthentication } = NativeModules;
+const RNLinkedinAuthentication = require('./src/LinkedinLogin');
 
-export default RNLinkedinAuthentication;
-// 'use strict';
-
-// const LinkedinAuthentication = require('./src/index.js');
-
-// module.exports = LinkedinAuthentication;
+module.exports = RNLinkedinAuthentication;
