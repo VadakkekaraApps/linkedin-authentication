@@ -3,7 +3,7 @@
 
 ## Getting started
 
-`$ npm install react-native-linkedin-authentication --save`
+`$ npm install git+https://git@github.com/VadakkekaraApps/linkedin-authentication.git --save`
 
 ### Mostly automatic installation
 
